@@ -1,6 +1,6 @@
 :root{
  --btnCOlor: #00BF63;
- ---Vert: #0039bf;
+ ---Vert: #0F056B;
 ---bg: #ECFDFF;
 /* Debut Accueil page css*/
 /* ---bg: black; */
@@ -473,6 +473,14 @@ footer{
     text-align: center;
 }
 /* Fin Login page css*/
+/* Fin Music page css*/
+/* .music .heade{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+} */
+
+/* Fin Music page css*/
 @media screen and (max-width: 1140px) {
     /* Debut Accueil page css*/
     main{
