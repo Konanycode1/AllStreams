@@ -20,37 +20,293 @@
    <article class="sidebar">
     <nav>
         <ul>
-            <li> <i class="fa-solid fa-headphones"></i><a href="">Musique</a></li>
-            <li> <i class="fa-solid fa-clapperboard"></i><a href="">Vidéo & Film</a></li>
-            <li><i class="fa-solid fa-headset"></i><a href="">Live</a></li>
-            <li><i class="fa-solid fa-bars"></i><a href="">Paramètre</a></li>
+            <li> </i><a href=""> <i class="fa-solid fa-headphones"></i><span class="conMenu">Musique</span> </a></li>
+            <li> <a href=""><i class="fa-solid fa-clapperboard"></i> <span class="conMenu">Vidéo & Film</span></a></li>
+            <li><a href=""><i class="fa-solid fa-headset"></i> <span class="conMenu">Live</span></a></li>
+            <li><a href=""><i class="fa-solid fa-bars"></i>  <span class="conMenu">Paramètre</span></a></li>
         </ul>
     </nav>
 
    </article>
    <main class="main scrollView">
         <div class="audio-player">
-            <div class="plays">
-                <img src="../assets/image/Didi-B.jpeg" alt="">
-                <div>
-                    <audio controls src="../assets/music/Didi B - 1 à 1 _ 1対1.mp3"></audio>
+            <div class="player">
+                <h5>Didi B- on a fermer les bouche</h5>
+                <div class="plays">
+                    <img src="../assets/image/Didi-B.jpeg" alt="">
+                    <div>
+                        <audio controls src="../assets/music/Didi B - 1 à 1 _ 1対1.mp3"></audio>
+                    </div>
                 </div>
             </div>
             <div class="filtreMusic">
                 <p>Listes Musiques</p>
                 <div class="search">
-                    <img class="icon" src="./assets/image/search.png" alt="">
+                    <img class="icon" src="../assets/image/search.png" alt="">
                     <input type="text">
+                    
+                </div>
+                <div class="filters">
+                    <i class="fa-solid fa-filter"></i>
                 </div>
             </div>
+            <div class="ListeAudio">
+                <table class="blueTable">
+                    <thead>
+                    <tr>
+                    <th>Titre</th>
+                    <th>Album</th>
+                    <th>Date</th>
+                    <th><i class="fa-regular fa-clock"></i></th>
+                    </tr>
+                    </thead>
+                    <tfoot>
+                    <!-- <tr>
+                    <td>foot1</td>
+                    <td>foot2</td>
+                    <td>foot3</td>
+                    <td>foot4</td>
+                    </tr>
+                    </tfoot> -->
+                    <tbody class="tbodyScroll">
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/fior-2-bior.jpeg" alt=""> GODO GODO
+                            </td>
+                            <td>Hit</td>
+                            <td>25/12/2021</td>
+                            <td>02 : 39</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/unnamed.jpeg" alt=""> Kpaflotage
+                            </td>
+                            <td>Kâflotage</td>
+                            <td>15/05/20223</td>
+                            <td>02 : 39</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/Didi-B.jpeg" alt=""> Tala
+                            </td>
+                            <td>Hit</td>
+                            <td>20/06/2022</td>
+                            <td>02 : 34</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/Chidinma.jpeg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/Angélique_Kidjo_Gershwin_2023.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/koff.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/koff.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/koff.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/koff.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr> 
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/fior-2-bior.jpeg" alt=""> GODO GODO
+                            </td>
+                            <td>Hit</td>
+                            <td>25/12/2021</td>
+                            <td>02 : 39</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/unnamed.jpeg" alt=""> Kpaflotage
+                            </td>
+                            <td>Kâflotage</td>
+                            <td>15/05/20223</td>
+                            <td>02 : 39</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/Didi-B.jpeg" alt=""> Tala
+                            </td>
+                            <td>Hit</td>
+                            <td>20/06/2022</td>
+                            <td>02 : 34</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/Chidinma.jpeg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/Angélique_Kidjo_Gershwin_2023.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/koff.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/koff.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/koff.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>
+                        <tr>
+                            <td class="arti">
+                                <img src="../assets/image/koff.jpg" alt=""> Jehova
+                            </td>
+                            <td>Hit</td>
+                            <td>14/10/2022</td>
+                            <td>04 : 00</td>
+                        </tr>   
+                    </tbody>
+                    </tr>
+                    </table>
+            </div>
+
+
            
 
         </div>
-        <!-- <div class="artiste-list">
-
-        </div> -->
+        <div class="artiste-list">
+            <div class="blocActist">
+                <div class="filterStar">
+                    <p class="filt1">
+                        <i class="fa-solid fa-filter"></i>
+                        filtre
+                    </p>
+                    <div class="searchFil">
+                        <img class="icon" src="../assets/image/search.png" alt="">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="linkKiff">
+                    <button class="activeBtn">Kiffer</button>
+                    <button>Non Kiffer</button>
+                </div>
+                <div class="listeStar">
+                    <div class="cardsStarlist">
+                        <div class="imgName">
+                            <img src="../assets/image/Chidinma.jpeg" alt="">
+                            <p>Chidinma</p>
+                        </div>
+                        <button>Kiffer</button>
+                    </div>
+                    <div class="cardsStarlist">
+                        <div class="imgName">
+                            <img src="../assets/image/Didi-B.jpeg" alt="">
+                            <p>DiDi B</p>
+                        </div>
+                        <button>Kiffer</button>
+                    </div>
+                    <div class="cardsStarlist">
+                        <div class="imgName">
+                            <img src="../assets/image/fior-2-bior.jpeg" alt="">
+                            <p>Fior2Bior</p>
+                        </div>
+                        <button>Kiffer</button>
+                    </div>
+                    <div class="cardsStarlist">
+                        <div class="imgName">
+                            <img src="../assets/image/Angélique_Kidjo_Gershwin_2023.jpg" alt="">
+                            <p>Angélique</p>
+                        </div>
+                        <button>Kiffer</button>
+                    </div>
+                    <div class="cardsStarlist">
+                        <div class="imgName">
+                            <img src="../assets/image/Angélique_Kidjo_Gershwin_2023.jpg" alt="">
+                            <p>Angélique</p>
+                        </div>
+                        <button>Kiffer</button>
+                    </div>
+                    <div class="cardsStarlist">
+                        <div class="imgName">
+                            <img src="../assets/image/koff.jpg" alt="">
+                            <p>Olomide</p>
+                        </div>
+                        <button>Kiffer</button>
+                    </div>
+                    <div class="cardsStarlist">
+                        <div class="imgName">
+                            <img src="../assets/image/BurnaBoy.jpeg" alt="">
+                            <p>BurnaBoy</p>
+                        </div>
+                        <button>Kiffer</button>
+                    </div>
+                    <div class="cardsStarlist">
+                        <div class="imgName">
+                            <img src="../assets/image/BurnaBoy.jpeg" alt="">
+                            <p>BurnaBoy</p>
+                        </div>
+                        <button>Kiffer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
 
    </main>
+   <footer>
+    <div class="foot">
+        <p>KonanyCode@Geek</p>
+        <p>Dev 2.0 2023</p>
+    </div>
+</footer>
    
     
 </body>

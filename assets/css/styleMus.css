@@ -68,6 +68,7 @@ header .userLog {
     background-size: cover;
     background-repeat: no-repeat;
     -ms-overflow-style: none;
+    display: flex;
 }
 .scrollView {
     position: relative;
@@ -120,14 +121,29 @@ nav ul li:hover {
 }
 .audio-player{
    width: 70%;
+   height: 90vh;
 }
-.audio-player p{
+.artiste-list{
+    width: 30%;
+    height: 90vh;
     
-    color: black;
+
+}
+.blocActist{
+    text-align: center;
+    background-color: #aaaaaa49;
+    padding:.8rem;
+}
+.player h5{
+    margin-top: 20px;
+    color:white;
+    text-align: center;
+    
+   
 }
 .plays{
     width: 400px;
-    height: 200px;
+    height: 100px;
     display: flex;
     margin: 0 auto;
     padding-top: 10px;
@@ -138,23 +154,304 @@ nav ul li:hover {
     border-radius: 100%;
     margin-right: 10px;
 }
+.filtreMusic{
+    display: flex;
+    justify-content: space-around;
+}
 .search{
     position: relative;
 }
 .search .icon{
     height: 20px;
-    min-width: 40px;
+    width:20px;
     position: absolute;
-    padding: 10px;
-    min-width: 40px;
+    padding: 5px;
     
 }
 .search input {
     width: 100%;
     padding: 5px;
     width: 15rem;
-    height: 1.5rem;
+    height: 1rem;
     text-align: center;
     border: 1px solid grey;
     border-radius: 20px;
+}
+.filters{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:  1px solid white;
+    border-radius: 100%;
+}
+.filters i, p{
+    color: white;
+}
+.ListeAudio{
+    padding: 10px;
+    background-color: #aaaaaa15;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+table.blueTable {
+    border: 0px solid #1C6EA4;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    position: relative;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 0px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  thead{
+    position: sticky;
+    top: 0;
+  }
+  th {
+    position: sticky;
+    top: 0;
+}
+  tbody{
+    width: 100%;
+   
+  }
+  table.blueTable tbody td {
+
+    font-size: 13px;
+    color: white;
+  }
+  table.blueTable thead {
+    }
+  table.blueTable thead th {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(52, 230, 64);
+  }
+  table.blueTable tfoot {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  table.blueTable tfoot td {
+    font-size: 16px;
+  }
+  .arti{
+    display: flex;
+    align-items: center;
+  }
+  .arti img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 100%;
+  }
+  .searchFil{
+    position: relative;
+}
+.searchFil .icon{
+    height: 20px;
+    width:20px;
+    position: absolute;
+    padding: 5px;
+    
+}
+.searchFil input {
+    padding: 5px;
+    width: 12rem;
+    height: 1rem;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+.filterStar{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+.filt1{
+    width: 5rem;
+    height: 2rem;
+    background-color: #aaaaaa3b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+.cardsStarlist{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.imgName{
+    display: flex;
+    align-items: center;
+}
+
+.imgName img{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.cardsStarlist button{
+    width: 8rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #AAAAAA;
+}
+.linkKiff .activeBtn{
+    width: 7rem;
+    height: 1.5rem;
+    background-color: #5ff585a8;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.linkKiff button{
+    border: none;
+    background-color: white;
+}
+.linkKiff {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+}
+footer{
+    position: absolute;
+    left: 150px;
+    width: calc(100% - 150px);
+    bottom: 0;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.foot{
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.foot p {
+    margin-right: 20px;
+    color: black;
+}
+::-webkit-scrollbar { 
+    width: 12px; /* Largeur de la scrollbar */ 
+  } 
+   
+::-webkit-scrollbar-thumb { 
+    background-color: #1ee360; /* Couleur de la poignée de la scrollbar */ 
+    border-radius: 6px; /* Bordure arrondie de la poignée */ 
+  }
+
+@media screen and (max-width: 1000px) {
+    .sidebar {
+        position: absolute;
+        left: 0;
+        top: 62px;
+        width: 80px;
+        background-color: #0d0d0d;
+        -ms-overflow-style: none;
+        height: calc(100% - 62px);
+    }
+    .sidebar nav ul li span{
+        display: none;
+    }
+    li i{
+        font-size: 20px;
+        color:white;
+        margin-right: 20px;
+    }
+    nav {
+        text-align: center;
+    }
+    nav ul{
+        display: inline-block;
+    }
+    .main {
+        position: absolute;
+        left: 80px;
+        width: calc(100% - 80px);
+        top: 62px;
+        height: calc(100% - 62px);
+        background-image: url('../image/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        -ms-overflow-style: none;
+        display: flex;
+    }
+    footer{
+        position: absolute;
+        left: 80px;
+        width: calc(100% - 80px);
+        bottom: 0;
+        height: 50px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .search{
+        position: relative;
+    }
+    .search .icon{
+        height: 20px;
+        width:20px;
+        position: absolute;
+        padding: 5px;
+        
+    }
+    .search input {
+        width: 100%;
+        padding: 5px;
+        width: 12rem;
+        height: 1rem;
+        text-align: center;
+        border: 1px solid grey;
+        border-radius: 20px;
+    }
+    .searchFil{
+        position: relative;
+    }
+    .searchFil .icon{
+        height: 20px;
+        width:20px;
+        position: absolute;
+        padding: 5px;
+        
+    }
+    .searchFil input {
+        padding: 5px;
+        width: 8rem;
+        height: 1rem;
+        text-align: center;
+        border: 1px solid grey;
+        border-radius: 20px;
+    }
+    .cardsStarlist button{
+        width: 4rem;
+        height: 1.5rem;
+        font-size: .5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #AAAAAA;
+    }
+}
+
+@media screen  and (max-width: 700px){
+   body{
+        font-size: 2rem;
+   }
+    
 }

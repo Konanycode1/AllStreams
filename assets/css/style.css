@@ -380,7 +380,7 @@ li{
 }
 footer{
     width: 100%;
-    height: 4rem;
+    height: 3rem;
     background-color: rgb(255, 255, 255);
 }
 .foot{
@@ -388,7 +388,10 @@ footer{
     margin: 0 auto;
     width: 20rem;
     height: 100%;
-    text-align: center;
+    display: flex;
+}
+.foot p{
+    margin-right: 20px;
 }
 /* Fin Accueil page css*/
 
