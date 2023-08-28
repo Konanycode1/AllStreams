@@ -20,8 +20,8 @@
    <article class="sidebar">
     <nav>
         <ul>
-            <li class="active"> </i><a href=""> <i class="fa-solid fa-headphones"></i><span class="conMenu">Musique</span> </a></li>
-            <li ><a href="video.html"><i class="fa-solid fa-clapperboard"></i> <span class="conMenu">Vidéo & Film</span></a></li>
+            <li > </i><a href="music.html"> <i class="fa-solid fa-headphones"></i><span class="conMenu">Musique</span> </a></li>
+            <li class="active"><a href=""><i class="fa-solid fa-clapperboard"></i> <span class="conMenu">Vidéo & Film</span></a></li>
             <li><a href=""><i class="fa-solid fa-headset"></i> <span class="conMenu">Live</span></a></li>
             <li><a href=""><i class="fa-solid fa-bars"></i>  <span class="conMenu">Paramètre</span></a></li>
         </ul>
@@ -31,15 +31,23 @@
    <main class="main scrollView">
         <div class="audio-player">
             <div class="player">
-                <h5>Didi B- on a fermer les bouche</h5>
-                <div class="plays">
-                    <img src="../assets/image/Didi-B.jpeg" alt="">
-                    <div>
-                        <audio controls src="../assets/music/Didi B - 1 à 1 _ 1対1.mp3"></audio>
-                    </div>
+                <!-- <h5>Didi B- on a fermer les bouche</h5> -->
+                <div class="plays-video">
+                    <!-- <img src="../assets/image/Didi-B.jpeg" alt=""> -->
+                        <video controls width="400">
+                            <!-- <source src="/media/cc0-videos/flower.webm" type="video/webm" /> -->
+                          
+                            <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+                          
+                            Download the
+                            <a href="/media/cc0-videos/flower.webm">WEBM</a>
+                            or
+                            <a href="/media/cc0-videos/flower.mp4">MP4</a>
+                            video.
+                          </video>
                 </div>
             </div>
-            <div class="filtreMusic">
+            <div class="filtreMusic v-ftre">
                 <p>Listes Musiques</p>
                 <div class="search">
                     <img class="icon" src="../assets/image/search.png" alt="">
@@ -50,13 +58,13 @@
                     <i class="fa-solid fa-filter"></i>
                 </div>
             </div>
-            <div class="ListeAudio">
+            <div class="ListeVideo">
                 <table class="blueTable">
                     <thead>
                     <tr>
                     <th>Titre</th>
-                    <th>Album</th>
-                    <th>Date</th>
+                    <th>Genre</th>
+                    <th>Date sortie</th>
                     <th><i class="fa-regular fa-clock"></i></th>
                     </tr>
                     </thead>
@@ -235,65 +243,57 @@
                     </div>
                 </div>
                 <div class="linkKiff">
-                    <button class="activeBtn">Kiffer</button>
-                    <button>Non Kiffer</button>
+                    <button class="activeBtn">Film</button>
+                    <button>Série</button>
                 </div>
                 <div class="listeStar">
                     <div class="cardsStarlist">
-                        <div class="imgName mList">
-                            <img src="../assets/image/Chidinma.jpeg" alt="">
-                            <p>Chidinma</p>
+                        <div class="imgName vlist">
+                            <p>Aventure</p>
                         </div>
-                        <button>Kiffer</button>
+                        <button>2000 Voir</button>
                     </div>
                     <div class="cardsStarlist">
-                        <div class="imgName mList">
-                            <img src="../assets/image/Didi-B.jpeg" alt="">
-                            <p>DiDi B</p>
+                        <div class="imgName vlist">
+                            <p>Comédie</p>
                         </div>
-                        <button>Kiffer</button>
+                        <button>100 Voir</button>
                     </div>
                     <div class="cardsStarlist">
-                        <div class="imgName mList">
-                            <img src="../assets/image/fior-2-bior.jpeg" alt="">
-                            <p>Fior2Bior</p>
+                        <div class="imgName vlist">
+                            <p>Drame</p>
                         </div>
-                        <button>Kiffer</button>
+                        <button>1000 Voir</button>
                     </div>
                     <div class="cardsStarlist">
-                        <div class="imgName mList">
-                            <img src="../assets/image/Angélique_Kidjo_Gershwin_2023.jpg" alt="">
-                            <p>Angélique</p>
+                        <div class="imgName vlist">
+                            <p>Fiction jeunesse</p>
                         </div>
-                        <button>Kiffer</button>
+                        <button>500 Voir</button>
                     </div>
                     <div class="cardsStarlist">
-                        <div class="imgName mList">
-                            <img src="../assets/image/Angélique_Kidjo_Gershwin_2023.jpg" alt="">
-                            <p>Angélique</p>
+                        <div class="imgName vlist">
+                            <p>Film Musical</p>
                         </div>
-                        <button>Kiffer</button>
+                        <button>100 Voir</button>
                     </div>
                     <div class="cardsStarlist">
-                        <div class="imgName mList">
-                            <img src="../assets/image/koff.jpg" alt="">
-                            <p>Olomide</p>
+                        <div class="imgName vlist">
+                            <p>Science fiction</p>
                         </div>
-                        <button>Kiffer</button>
+                        <button>1200 Voir</button>
                     </div>
                     <div class="cardsStarlist">
-                        <div class="imgName mList">
-                            <img src="../assets/image/BurnaBoy.jpeg" alt="">
-                            <p>BurnaBoy</p>
+                        <div class="imgName vlist">
+                            <p>Western</p>
                         </div>
-                        <button>Kiffer</button>
+                        <button>10 Voir</button>
                     </div>
                     <div class="cardsStarlist">
-                        <div class="imgName mList">
-                            <img src="../assets/image/BurnaBoy.jpeg" alt="">
-                            <p>BurnaBoy</p>
+                        <div class="imgName vlist">
+                            <p>Cape et d’épée</p>
                         </div>
-                        <button>Kiffer</button>
+                        <button>200 Voir</button>
                     </div>
                 </div>
             </div>
