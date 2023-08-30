@@ -1,6 +1,6 @@
 :root{
-    --btnCOlor: #00BF63;
-    ---Vert: #0F056B;
+    --btnCOlor: #2ECC71 ;
+    ---Vert: #2980B9;
    ---bg: #ECFDFF;
    ---hoverline: #518060;
    /* Debut Accueil page css*/
@@ -11,7 +11,7 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fiel
     padding: 0;
 }
 .active {
-    background-color: #0F056B;
+    background-color:var(---Vert);
 }
 header {
     z-index: 20;
@@ -79,6 +79,7 @@ header .userLog {
     -ms-overflow-style: none;
     display: flex;
 }
+
 .scrollView {
     position: relative;
     height: 100%;
@@ -241,12 +242,54 @@ video{
     overflow-y: scroll;
 }
 .ListeVideo{
-    padding: 10px;
-    background-color: #aaaaaa15;
-    height: 60vh;
+    width: 100%;
+    height: 250px;
     overflow: hidden;
     overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+.videoBloc{
+    display: none;
+}
+.card{
+    position: relative;
+    width: 120px;
+    border: 1px dashed #00BF63;
+    text-align: center;
+    margin: 10px;
+
+}
+.blocVi img{
+    width: 100%;
+    height: 8rem;
+}
+
+.playViber{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    /* border: 3px solid #00BF63; */
+    background-color: var(--btnCOlor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.playViber:hover{
+    /* box-shadow: 0px 0px 48px -3px #00BF63; */
+    box-shadow: rgb(0,191,99) 0px 5px 15px;
+}
+.playViber i{
+    color: white;
+    font-size: 1.5rem;
+}
+
 
 table.blueTable {
     border: 0px solid #1C6EA4;
@@ -297,6 +340,20 @@ tr:hover{
   .arti{
     display: flex;
     align-items: center;
+  }
+  .plsMusic i{
+    font-size: 2rem;
+    color: #ffffff;
+  }
+  .overlay{
+    position: absolute;
+    z-index: 20;
+    width: 25rem;
+    height: 20rem;
+    left: 200px;
+    top:150px ;
+    background-color: #00BF63;
+    display: none;
   }
   .arti img{
     width: 50px;
@@ -415,7 +472,117 @@ footer{
     background-color: #1ee360; /* Couleur de la poignée de la scrollbar */ 
     border-radius: 6px; /* Bordure arrondie de la poignée */ 
   }
+/* css live bloc */
+.liveBloc{
+    width: 100%;
+    height: 100%;
+}
+.infolive{
+    width: 29rem;
+    height: 2rem;
+    margin: 0 auto;
+    color: white;
+    padding: 20px;
+}
+.LiveGlo{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.loadLive{
+    width: 30%;
+    height: auto;
+}
+.laodEncours{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.btnlive{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.btnlive button{
+    width: 10rem;
+    height: 2rem;
+    background-color: var(--btnCOlor);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgb(0,191,99) 0px 5px 15px;
+}
+.listLive{
+    margin-top: 20px;
+}
+.cardlive{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: var(---Vert);
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: rgb(0,191,99) 0px 5px 15px;
+}
+.blocLOne{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 
+}
+.blocLOne img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.cardlive button{
+    border: none;
+    background-color: var(--btnCOlor);
+    color: white;
+}
+.cardlive i{
+    font-size: 2rem;
+    color: white;
+}
+.encour{
+    width: 100%;
+    display: ;
+}
+.cardEncours{
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    position: relative;
+}
+.encour img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.liveVerif{
+    width: 3.5rem;
+    height: 1.5rem;
+    background-color: red;
+    top: 0;
+    color:white;
+    right: 1px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+.join{
+    position:absolute; 
+   bottom: 1px;
+   left: 0;
+
+}
+/* css live bloc */
 @media screen and (max-width: 1000px) {
     .sidebar {
         position: absolute;
@@ -724,6 +891,7 @@ footer {
     height: 50vh;
     overflow: hidden;
     overflow-y: scroll;
+    position: relative;
 }
 .ListeVideo{
     padding: 10px;
