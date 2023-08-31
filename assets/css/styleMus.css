@@ -129,6 +129,30 @@ nav ul li:hover {
     background-color: var(---Vert);   
     
 }
+audio:hover, audio:focus, audio:active
+{
+-webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+-webkit-transform: scale(1.05);
+-moz-transform: scale(1.05);
+transform: scale(1.05);
+}
+
+
+audio
+{
+-webkit-transition:all 0.5s linear;
+-moz-transition:all 0.5s linear;
+-o-transition:all 0.5s linear;
+transition:all 0.5s linear;
+-moz-box-shadow: 2px 2px 4px 0px #007300;
+-webkit-box-shadow:  2px 2px 4px 0px #139f24;
+box-shadow: 2px 2px 4px 0px #2cc52a;
+-moz-border-radius:7px 7px 7px 7px ;
+-webkit-border-radius:7px 7px 7px 7px ;
+border-radius:7px 7px 7px 7px ;
+}
 .audio-player{
    width: 70%;
    height: 90vh;
@@ -445,6 +469,9 @@ tr:hover{
     background-color: white;
 }
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     left: 150px;
     width: calc(100% - 150px);
@@ -453,9 +480,8 @@ footer{
     background-color: rgb(255, 255, 255);
 }
 .foot{
-    display: block;
     margin: 0 auto;
-    width: 20rem;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -494,9 +520,15 @@ footer{
     height: auto;
 }
 .laodEncours{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: center;
+}
+.livesetting{
+    width: calc(100% - (30%+50%));
+    height: 10rem;
+    background-color: #5a59595e;
+    border-radius: 10px;
 }
 .btnlive{
     width: 100%;
@@ -514,7 +546,11 @@ footer{
     box-shadow: rgb(0,191,99) 0px 5px 15px;
 }
 .listLive{
+    width: 100%;
+    height: 450px;
     margin-top: 20px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 .cardlive{
     width: 100%;
@@ -522,7 +558,7 @@ footer{
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-    background-color: var(---Vert);
+    background-color:black;
     border-radius: 10px;
     margin-bottom: 25px;
     box-shadow: rgb(0,191,99) 0px 5px 15px;
@@ -552,35 +588,93 @@ footer{
 }
 .encour{
     width: 100%;
-    display: ;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
 }
 .cardEncours{
     width: 10rem;
     height: 10rem;
+    margin: 5px;
     text-align: center;
     position: relative;
 }
-.encour img{
+.cardEncours img{
     width: 100%;
     height: 100%;
     display: inline-block;
+    border-radius: 10px;
+    box-shadow: rgb(132, 160, 147) 0px 5px 15px;
 }
 .liveVerif{
-    width: 3.5rem;
+    width: 1.5rem;
     height: 1.5rem;
     background-color: red;
-    top: 0;
+    border-radius: 100%;
+    top: 1px;
     color:white;
     right: 1px;
     display: block;
     position: absolute;
     text-align: center;
+    animation: anim 1s ease-in-out infinite ;
 }
 .join{
     position:absolute; 
-   bottom: 1px;
-   left: 0;
+    bottom: 1px;
+    left: 0;
+    background-color: #0d0d0d;
+    border: 1px dashed var(--btnCOlor);
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 
+}
+.spect{
+    position: absolute;
+    bottom: 1px;
+    right: 10px;
+    z-index: 20;
+
+}
+.spect i{
+    color: var(--btnCOlor);
+}
+.btninfo{
+    width: 100%;
+    text-align: center;
+}
+.inf{
+    text-align: center;
+    color: white;
+}
+.settinginfo a{
+    width: 15rem;
+    height: 2rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.settinginfo a:hover{
+    border: 1px dashed #00BF63;
+}
+.settinginfo p {
+    width: 5rem;
+    margin-left: 5px;
+}
+.settinginfo i, p {
+    font-size: 1.5rem;
+    color: white;
+}
+@keyframes anim {
+    from {
+        opacity: 0.5;
+    }
+    to{ 
+        opacity: 1;
+    }
+    
 }
 /* css live bloc */
 @media screen and (max-width: 1000px) {
@@ -698,6 +792,27 @@ footer{
     .linkKiff button{
         font-size: .8rem;
     }
+    .LiveGlo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .livesetting {
+        width: 100%;
+        height: 6rem;
+        border-radius: 10px;
+    }
+    .loadLive {
+        width: 50%;
+        height: auto;
+    }
+    .btninfo {
+        width: 100%;
+        display: flex;
+    }
 }
 
 @media screen  and (max-width: 800px){
@@ -751,6 +866,37 @@ audio {
     border: 1px solid grey;
     border-radius: 20px;
 }
+.LiveGlo {
+    width: 100%;
+    height: auto;
+   display: block;
+}
+.loadLive {
+    width: 100%;
+    height: auto;
+}
+.laodEncours {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.encour {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.livesetting {
+    width: 100%;
+    height: 6rem;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+footer{
+    display: none;
+}
 }
 @media screen  and (max-width: 450px){
    
@@ -796,6 +942,7 @@ audio {
     width: 10rem;
     height: 42px;
 }
+
  .search input {
      padding: 5px;
      width: 8rem;
@@ -880,15 +1027,12 @@ footer {
     margin-bottom: 20px;
 }
 .blocActist {
-    text-align: center;
-    background-color: #aaaaaa49;
-    height: 100%;
-    padding: 0.8rem;
+   display: none;
 }
 .ListeAudio{
     padding: 10px;
     background-color: #aaaaaa15;
-    height: 50vh;
+    height: 80vh;
     overflow: hidden;
     overflow-y: scroll;
     position: relative;
@@ -899,6 +1043,35 @@ footer {
     height:50vh;
     overflow: hidden;
     overflow-y: scroll;
+}
+.scrollView {
+    position: relative;
+    height: 100%;
+    width: calc(100% - 50px);
+   overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+.cardEncours {
+    width: 15rem;
+    height: 15rem;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+.btninfo {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.livesetting {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+
 }
  }
  
