@@ -260,8 +260,7 @@ video{
 }
 .ListeAudio{
     padding: 10px;
-    background-color: #aaaaaa15;
-    height: 70vh;
+    height: 50vh;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -501,7 +500,7 @@ footer{
 /* css live bloc */
 .liveBloc{
     width: 100%;
-    height: 100%;
+    height: 90vh;
 }
 .infolive{
     width: 29rem;
@@ -561,7 +560,7 @@ footer{
     background-color:black;
     border-radius: 10px;
     margin-bottom: 25px;
-    box-shadow: rgb(0,191,99) 0px 5px 15px;
+    box-shadow: rgba(0, 191, 99, 0.297) 0px 5px 15px;
 }
 .blocLOne{
     width: 40%;
@@ -571,14 +570,20 @@ footer{
     color: white;
 
 }
+.blocLOne h6{
+    width: 4.5rem;
+}
 .blocLOne img{
     width: 30px;
     height: 30px;
     border-radius: 100%;
     margin-right: 20px;
 }
-.cardlive button{
-    border: none;
+.cardlive span{
+    width: .6rem;
+    height: .6rem;
+    display: block;
+    border-radius: 100%;
     background-color: var(--btnCOlor);
     color: white;
 }
@@ -598,6 +603,7 @@ footer{
     margin: 5px;
     text-align: center;
     position: relative;
+    border:.2rem solid var(--btnCOlor);
 }
 .cardEncours img{
     width: 100%;
@@ -655,6 +661,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px dashed #00BF63;
 }
 .settinginfo a:hover{
     border: 1px dashed #00BF63;
@@ -666,6 +673,87 @@ footer{
 .settinginfo i, p {
     font-size: 1.5rem;
     color: white;
+}
+/* parametre  */
+
+.cardProfil{
+    width: 80%;
+    height: 15rem;
+    background-color: white;
+    border: .2rem dashed var(--btnCOlor);
+    position: relative;
+    margin: 0 auto;
+}
+.ehe{
+    width: 100%;
+    height: 5rem;
+    background-color: #0d0d0d;
+    position: relative;
+}
+.ppdd{
+    margin-top: 20px;
+}
+.titleName{
+    margin-top: 70px;
+}
+.titleName p{
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+.cardProfil img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    border-radius: 100%;
+    border: .2rem solid var(--btnCOlor);
+}
+.nomtit{
+    text-align: center;
+   
+    margin-bottom: 20px;
+}
+.emailtit{
+    text-align: center;
+    /* margin-top: 60px; */
+    margin-bottom: 20px;
+}
+.btnparam{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.suivi{
+    background-color: var(--btnCOlor);
+    border: none;
+    width: 5rem;
+    height: 20px;
+    color: white;
+}
+.kifff{
+    background-color: var(---Vert);
+    border: none;
+    width: 5rem;
+    height: 20px;
+    color: white;
+}
+.paramLiff{
+    width: 70%;
+}
+.cardFill{
+    width: 100%;
+    height: 20rem;
+}
+.fav{
+    text-align: center;
+    color: white;
+}
+.cardSSS{
+    margin-top: 20px;
 }
 @keyframes anim {
     from {
@@ -769,7 +857,6 @@ footer{
     }
     .ListeAudio {
         padding: 10px;
-        background-color: #aaaaaa15;
         height: 70vh;
         overflow: hidden;
         overflow-y: scroll;
@@ -808,6 +895,9 @@ footer{
     .loadLive {
         width: 50%;
         height: auto;
+    }
+    .paramLiff{
+        width: 50%;
     }
     .btninfo {
         width: 100%;
@@ -1031,7 +1121,6 @@ footer {
 }
 .ListeAudio{
     padding: 10px;
-    background-color: #aaaaaa15;
     height: 80vh;
     overflow: hidden;
     overflow-y: scroll;
